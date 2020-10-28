@@ -2,7 +2,8 @@ import random
 people = ["pierre", "paul", "guillaume", "eliott"]
 crew = {}
 
-def compute(number_in_group):
+def compute(number_in_group, people):
+
     crew = {}
     cpt = 0
     random.shuffle(people)
@@ -16,5 +17,10 @@ def compute(number_in_group):
     if len(people) > 0 :
         crew["group " + str(cpt+1)] = people
     print(crew)
+    return(crew)
+compute(5, people)
+
+
+    
 
 
