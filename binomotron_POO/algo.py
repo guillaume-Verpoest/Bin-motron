@@ -24,5 +24,3 @@ class Binomotron:
             crew[cpt+1] = self.people
         return(crew)
 
-crew = Binomotron(2)
-print("=>", crew())
