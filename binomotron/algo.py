@@ -18,7 +18,7 @@ def compute(number_in_group, people):
         crew["group " + str(cpt+1)] = people
     print(crew)
     return(crew)
-compute(5, people)
+compute(2, people)
 
 
     
