@@ -17,7 +17,6 @@ class graphique:
         crew = Binomotron(number_in_group)
         crew = crew()
         self.group_window(crew)
-        return(crew)
 
     
     def main_windows(self):
