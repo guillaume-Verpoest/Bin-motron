@@ -1,4 +1,4 @@
-from random import shuffle
+import random
 from query import Query
 class Binomotron:
     def __init__(self, number_in_group):
@@ -19,9 +19,9 @@ class Binomotron:
             for _ in range(self.number_in_group):
                 newarray.append(self.people[0])
                 self.people.remove(self.people[0])
-            crew["group " + str(cpt)] = newarray
+            crew[cpt] = newarray
         if len(self.people) > 0 :
-            crew["group " + str(cpt+1)] = self.people
+            crew[cpt+1] = self.people
         return(crew)
 
 crew = Binomotron(2)
